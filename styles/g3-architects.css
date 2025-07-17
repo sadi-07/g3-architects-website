@@ -19,10 +19,12 @@
 .primary-btn{
     background-color: #FF900E;
     color: #fff;
-    padding: 15px 25px;
+    padding: 13px 23px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* Header section */
@@ -58,7 +60,7 @@ header{
     margin: 0 auto;
 }
 .banner-content{
-    max-width: 860px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
     padding: 100px 0 50px;
@@ -72,4 +74,69 @@ header{
 }
 .banner img{
     width: 100%;
+}
+
+/* Feature section */
+
+.feature-section{
+    max-width: 980px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 60px;
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.feature-image img{
+    max-width: 100%;
+}
+.feature-content{
+    width: 50%;
+}
+.feature-content h2{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #727272;
+}
+.feature-content h2 span{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #131313;
+}
+.feature-content span{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #FF900E;
+}
+.feature-content p{
+    font-weight: 300;
+    font-size: 1rem;
+    color: #727272;
+    padding: 25px 0px 35px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar h2{
+        text-align: center;
+    }
+    .navbar ul{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
