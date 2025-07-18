@@ -95,7 +95,7 @@ header{
     max-width: 100%;
 }
 .feature-content{
-    width: 50%;
+    max-width: 50%;
 }
 .feature-content h2{
     font-weight: 500;
@@ -188,11 +188,60 @@ header{
     font-size: 1.4rem;
     text-align: center;
 }
+
+/* Facts section */
+
+.facts-section{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.facts-section .heading{
+    max-width: 60%;
+}
+.facts-section .heading h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #131313;
+}
+.facts-section .heading p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #727272;
+    padding: 20px 0px 80px;
+}
+.fact-boxes{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.fact-boxes .box{
+    padding: 35px 25px;
+    border: 2px solid #FF900E;
+    border-radius: 14px;
+}
+.fact-boxes .box h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #424242;
+    padding: 10px 0;
+}
+.fact-boxes .box p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #727272;
+}
+
 /* Responsive */
 
 @media screen and (max-width:576px) {
+
+    /* Header */
+
     .navbar{
         flex-direction: column;
+        margin: 0 auto;
     }
     .navbar h2{
         text-align: center;
@@ -202,6 +251,8 @@ header{
         padding-top: 20px;
     }
 
+    /* Feature */
+
     .feature-section{
         flex-direction: column;
         padding: 50px 0px;
@@ -209,6 +260,11 @@ header{
     .feature-image{
         grid-template-columns: repeat(1, 1fr);
     }
+    .feature-content{
+        margin: 0px auto;
+    }
+
+    /* About */
 
     .about-section{
         flex-direction: column;
@@ -231,4 +287,22 @@ header{
     .exp-div h2{
         font-size: 2.1rem;
     }
+
+    /* Facts */
+
+    .facts-section .heading{
+        padding: 0px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .fact-boxes{
+        flex-direction: column;
+        padding: 0px;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .fact-boxes .box{
+        margin-bottom: 20px;
+    }
+
 }
